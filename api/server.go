@@ -34,6 +34,6 @@ func Run() {
 	apiPort := fmt.Sprintf(":%s", os.Getenv("API_PORT"))
 	fmt.Printf("Listening to port %s", apiPort)
 
-	server.Run(apiPort)
+	server.Run(process.env.PORT || apiPort)
 
 }
