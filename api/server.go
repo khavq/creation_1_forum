@@ -2,7 +2,6 @@ package api
 
 import (
 	"fmt"
-	"log"
 	"os"
 
 	"github.com/khavq/creation_1_forum/api/controllers"
