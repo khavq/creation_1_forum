@@ -68,7 +68,7 @@ services:
     depends_on:
       - forum-mysql
     environment:
-      - PMA_HOST=mysql # Note the "mysql". Must be the name of the what you used as the mysql service.
+      - PMA_HOST=${DB_HOST} # Note the "mysql". Must be the name of the what you used as the mysql service.
       - PMA_USER=${DB_USER}
       - PMA_PORT=${DB_PORT}
       - PMA_PASSWORD=${DB_PASSWORD}
@@ -81,8 +81,7 @@ services:
 
 volumes:
   api:
-  database_postgres:
-  # database_mysql:
+  database_mysql:
 
 # Networks to be created to facilitate communication between containers
 networks:
