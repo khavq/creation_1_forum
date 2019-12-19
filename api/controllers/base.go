@@ -59,6 +59,6 @@ func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, D
 	server.initializeRoutes()
 }
 
-func (server *Server) Run(addr string) {
+func (server *Server) Run() {
 	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), server.Router))
 }
