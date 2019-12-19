@@ -7,7 +7,6 @@ import (
 	"testing"
 
 	"github.com/jinzhu/gorm"
-	"github.com/joho/godotenv"
 	"github.com/khavq/creation_1_forum/api/controllers"
 	"github.com/khavq/creation_1_forum/api/models"
 )
