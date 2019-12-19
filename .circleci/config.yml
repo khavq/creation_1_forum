@@ -8,8 +8,8 @@ jobs: # basic units of work in a run
         environment: # environment variables for primary container
           MYSQL_DATABASE: creation_1_forum_test
           MYSQL_USER: khavq
-          MYSQL_PASSWORD: r00tdbpw
-          MYSQL_ROOT_PASSWORD: r00tdbpw
+          MYSQL_PASSWORD: password
+          MYSQL_ROOT_PASSWORD: password
           DATABASE_HOST: forum-mysql-test
 
     environment: # environment variables for the build itself
