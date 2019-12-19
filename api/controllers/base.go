@@ -59,5 +59,5 @@ func (server *Server) Initialize(Dbdriver, DbUser, DbPassword, DbPort, DbHost, D
 }
 
 func (server *Server) Run(addr string) {
-	log.Fatal(http.ListenAndServe(addr, server.Router))
+	log.Fatal(http.ListenAndServe(":"+os.Getenv("PORT"), server.Router))
 }
