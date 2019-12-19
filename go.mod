@@ -24,6 +24,7 @@ require (
 	github.com/sirupsen/logrus v1.4.2 // indirect
 	github.com/spf13/cobra v0.0.5 // indirect
 	github.com/spf13/pflag v1.0.5 // indirect
+	github.com/stretchr/testify v1.4.0
 	github.com/twinj/uuid v1.0.0
 	go.starlark.net v0.0.0-20191202231402-1e82a9dd93ba // indirect
 	golang.org/x/arch v0.0.0-20191126211547-368ea8f32fff // indirect
